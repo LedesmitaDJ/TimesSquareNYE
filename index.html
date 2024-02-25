@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Times Square NYE">
+    <meta name="keywords" content="Times, Square, New, Year´s, Eve, Years, 2024, 2025, 2026">
+
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Times Square NYE 2025</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="/" class="enlace">
+                <img src="img/2025.png" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="/">Inicio</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="en-vivo.html">En vivo</a></li>
+                <li><a href="replay.html">Replay</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video">
+            <video id="video" width="205" height="205" autoplay hidden="true" loop="true">
+                <source src="video/Ball-Counter-2025.webm" type="video/webm" />
+            </video>
+        </div>
+        <h1>Times Square NYE</h1>
+        <section class="countdown">
+            <div id="timer">
+                <span id="days">00</span>
+                <span>:</span>
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+        </section>
+        <section id="event-details">
+            <h2>Detalles</h2>
+            <p><strong>Fecha: </strong>31 de diciembre</p>
+            <p><strong>Lugar: </strong>Times Square, New York City</p>
+            <p>No se pierda la famosa caída de la bola de Times Square.</p>
+            <br>
+            <section id="cobertura">
+                <h2>La cobertura en vivo empieza en:</h2>
+                <div id="timer2">
+                    <span id="days2">00</span>
+                    <span>:</span>
+                    <span id="hours2">00</span>
+                    <span>:</span>
+                    <span id="minutes2">00</span>
+                    <span>:</span>
+                    <span id="seconds2">00</span>
+                </div>
+                <p>Conectate el 31 de diciembre a las 6pm para la transmisión oficial de New Year´s Eve en vivo desde
+                    Times
+                    Square, New York City.</p>
+            </section>
+            <div class="botoncenter">
+                <a href="webcast-nye.html">
+                    <button class="botonNYE" id="button" style="display: none;">¡Ver en vivo!</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ledesmita TV</p>
+        <br>
+        <div class="iconos-sociales">
+            <a href="https://www.youtube.com/@LedesmitaTV" target="_blank"><img loading="lazy" alt="Sígueme en YouTube"
+                    height="35" width="35"
+                    src="https://1.bp.blogspot.com/-h6h-SJbwN7E/YPhkgB-Yl8I/AAAAAAAAA1I/Q9tCbcjDf_kpktwexaaX6Az6qzxkRZpiQCLcBGAsYHQ/s0/youtube-icono-oscuro.png"
+                    title=" Sígueme en YouTube " /></a>
+
+            <a href="https://www.facebook.com/LedesmitaTV" target="_blank"><img loading="lazy" alt="Sígueme en Facebook"
+                    height="35" width="35"
+                    src="https://1.bp.blogspot.com/-Tk2jtGi83Fo/YPhkfdCneZI/AAAAAAAAA00/13Sw20An6d4rb4vL3q7LYq0caVJzpxNwwCLcBGAsYHQ/s0/facebook-icono-oscuro.png"
+                    title="Sígueme en Facebook" /></a>
+
+            <a href="https://acortar.link/LedesmitaTV" target="_blank"><img loading="lazy"
+                    alt="Sígueme en WhatsApp" height="35" width="35"
+                    src="https://1.bp.blogspot.com/-p9gdVOariGI/YPhkf6NKQMI/AAAAAAAAA1A/rWm9JjlUtiUqFhscQ6UAAXvwHLi-gJrSgCLcBGAsYHQ/s0/whatsapp-icono-oscuro.png"
+                    title="Sígueme en WhatsApp" /></a>
+
+            <a href="https://www.tiktok.com/@ledesmitatv" target="_blank"><img loading="lazy" alt="Sígueme en TikTok"
+                    height="35" width="35"
+                    src=" https://1.bp.blogspot.com/-rK19lcfnq9c/YPhkfuEwAnI/AAAAAAAAA1U/0ydy_rVmboQtu211UQs7_zMXdMih2LCCwCPcBGAYYCw/s0/tiktok-icono-oscuro.png"
+                    title="Sígueme en TikTok" /></a>
+        </div>
+    </footer>
+
+    <script src="js/footer-year.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/countdown2.js"></script>
+
+</body>
+
+</html>
