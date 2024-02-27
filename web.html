@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="countdown.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
     <title>Times Square NYE 2024</title>
@@ -18,7 +18,9 @@
 
     <main>
         <div class="video">
-            <iframe src="ball-counter-video.html" width="205" height="205" frameborder="0"></iframe>
+            <video id="video" width="205" height="205" autoplay hidden="true" loop="true">
+                <source src="Ball-Counter-2025.webm" type="video/webm" />
+            </video>
         </div>
         <h1>Times Square NYE</h1>
         <section class="countdown">
@@ -86,9 +88,9 @@
         </div>
     </footer>
 
-    <script src="js/footer-year.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/countdown2.js"></script>
+    <script src="footer-year.js"></script>
+    <script src="countdown.js"></script>
+    <script src="countdown2.js"></script>
 
 </body>
 

@@ -1,0 +1,15 @@
+#multiview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-player {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
