@@ -10,7 +10,7 @@
 
 #timer {
     font-family: 'NYE Font', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -18,7 +18,7 @@
 
 #timer2 {
     font-family: 'NYE Font', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     color: #333;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
