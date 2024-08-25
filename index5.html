@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <title>Reproductor Video.JS</title>
+</head>
+
+<body>
+    <video id="my-video" class="video-js" autoplay controls hidden="false" muted="false" preload="auto" width="640" height="360"
+        poster="https://i.ytimg.com/vi/dYB8kPrAh8Q/hq720.jpg" data-setup="{}">
+        <source
+            src="https://drive.google.com/uc?export=download&id=1FACDygEz7yr2ZFSJdUYUo6mo5XOqPzcu"
+            type="video/mp4" />
+        <p class="vjs-no-js">
+            Para ver este video, por favor habilita JavaScript, y considera actualizar a un navegador web que
+            <a href="https://videojs.com/html5-video-support/" target="_blank">soporte video HTML5</a>
+        </p>
+    </video>
+
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+
+    <!-- Video.js HTTP Streaming (VHS) -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/videojs-http-streaming@latest/dist/videojs-http-streaming.min.js"></script>
+    <!-- Script personalizado -->
+    <script>
+        var player = videojs('my-video');
+
+        // Ejemplo de configuración adicional
+        player.ready(function () {
+            this.volume(1); // Volumen inicial al 50%
+        });
+
+        // Ejemplo de evento
+        player.on('started', function () {
+            alert('El video ha terminado.');
+        });
+    </script>
+</body>
+
+</html>
