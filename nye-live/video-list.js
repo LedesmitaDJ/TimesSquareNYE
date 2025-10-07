@@ -26,7 +26,7 @@ let allVideos = [
    },
    {
       name: "NYE 2026 - Live WebCast",
-      src: "https://livestream.com/accounts/43923/events/10762863/player?autoPlay=true&mute=false",
+      src: "webcast-nye.html",
       id: "vid_6"
    },
    {
@@ -102,6 +102,6 @@ let allVideos = [
    {
       name: "Audience 3 Cam",
       src: "https://player.twitch.tv/?channel=nyeaudience3cam&enableExtensions=true&muted=false&parent=ledesmitadj.github.io&player=popout&volume=1",
-      id: "vid_20"
+      id: "vid_21"
    }
 ]
