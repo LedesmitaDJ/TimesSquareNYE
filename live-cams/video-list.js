@@ -6,7 +6,7 @@ let allVideos = [
    },
    {
       name: "Times Square 4K View",
-      src: "https://www.youtube.com/embed/CBU0ruGg2UI?autoplay=1",
+      src: "https://www.youtube.com/embed/rnXIjl_Rzy4?autoplay=1",
       id: "vid_2"
    },
    {
@@ -36,7 +36,7 @@ let allVideos = [
    },
    {
       name: "1540 Broadway View",
-      src: "https://www.youtube.com/embed/h2HXup8nA1I?autoplay=1",
+      src: "https://www.youtube.com/embed/nVsDt8AvfCU?autoplay=1",
       id: "vid_8"
    },
    {
@@ -45,13 +45,18 @@ let allVideos = [
       id: "vid_9"
    },
    {
-      name: "Nasdaq",
-      src: "https://livestream.com/accounts/888332/events/931293/player?autoPlay=true&mute=false",
+      name: "1560 Billboard",
+      src: "https://share.earthcam.net/tJ90CoLmq7TzrY396Yd88A4kdLdbDd6oQl5D9Ktzt8U!/times_square_locations/1560_broadway_billboard/live",
       id: "vid_10"
    },
    {
-      name: "Billboard",
-      src: "https://share.earthcam.net/tJ90CoLmq7TzrY396Yd88A4kdLdbDd6oQl5D9Ktzt8U!/times_square_locations/billboard_view/live",
+      name: "1500 Billboard",
+      src: "https://share.earthcam.net/tJ90CoLmq7TzrY396Yd88A4kdLdbDd6oQl5D9Ktzt8U!/times_square_locations/1500_broadway_billboard/live",
       id: "vid_11"
+   },
+   {
+      name: "49th Street Billboard",
+      src: "https://share.earthcam.net/tJ90CoLmq7TzrY396Yd88A4kdLdbDd6oQl5D9Ktzt8U!/times_square_locations/49th_street/live",
+      id: "vid_12"
    }
 ]

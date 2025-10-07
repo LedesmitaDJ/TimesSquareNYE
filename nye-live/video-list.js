@@ -1,31 +1,31 @@
 let allVideos = [
    {
-      name: "NYE 2025 - Live",
+      name: "NYE 2026 - Live",
       src: "https://www.youtube.com/embed/NnHYOIDcpLY?autoplay=1",
       id: "vid_1"
    },
    {
-      name: "NYE 2025 - Live Test",
+      name: "NYE 2026 - Live Test",
       src: "https://www.youtube.com/embed/HaMQuJrRmgQ?autoplay=1",
       id: "vid_2"
    },
    {
-      name: "NYE 2025 Live From Times Square",
+      name: "NYE 2026 Live From Times Square",
       src: "https://www.youtube.com/embed/Fv6CBdzK9pM?autoplay=1",
       id: "vid_3"
    },
    {
-      name: "NYE 2025 Live From Times Square (ASL)",
+      name: "NYE 2026 Live From Times Square (ASL)",
       src: "https://www.youtube.com/embed/8v0SCb9gABs?autoplay=1",
       id: "vid_4"
    },
    {
-      name: "NYE 2025 - Live Multi-View",
+      name: "NYE 2026 - Live Multi-View",
       src: "https://www.youtube.com/embed/GZqpy1KQuH8?autoplay=1",
       id: "vid_5"
    },
    {
-      name: "NYE 2025 - Live WebCast",
+      name: "NYE 2026 - Live WebCast",
       src: "https://livestream.com/accounts/43923/events/10762863/player?autoPlay=true&mute=false",
       id: "vid_6"
    },
@@ -97,6 +97,11 @@ let allVideos = [
    {
       name: "Audience 2 Cam",
       src: "https://player.twitch.tv/?channel=nyeaudience2cam&enableExtensions=true&muted=false&parent=ledesmitadj.github.io&player=popout&volume=1",
+      id: "vid_20"
+   },
+   {
+      name: "Audience 3 Cam",
+      src: "https://player.twitch.tv/?channel=nyeaudience3cam&enableExtensions=true&muted=false&parent=ledesmitadj.github.io&player=popout&volume=1",
       id: "vid_20"
    }
 ]
