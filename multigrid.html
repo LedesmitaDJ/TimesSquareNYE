@@ -8,7 +8,7 @@
     <style>
         body {
             margin: 0;
-            background: #121212 url('img/NYE-Fondo2') no-repeat center center fixed;
+            background: url('img/NYE-Fondo2') no-repeat center center fixed;
             background-size: cover;
             font-family: Arial, sans-serif;
             color: #eee;
@@ -22,8 +22,10 @@
         .parent {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, auto); /* Cambiado a auto para permitir alturas ajustables por aspect-ratio */
             gap: 10px;
+            width: 100%;
+            max-width: 1200px; /* Limita el ancho máximo para pantallas grandes */
         }
 
         .div1 {
@@ -34,6 +36,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 12px #0000ff;
+            aspect-ratio: 16 / 9; /* Ratio 16:9 */
         }
 
         .div2 {
@@ -43,6 +46,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 12px #0000ff;
+            aspect-ratio: 16 / 9; /* Ratio 16:9 */
         }
 
         .div3 {
@@ -53,6 +57,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 12px #0000ff;
+            aspect-ratio: 16 / 9; /* Ratio 16:9 */
         }
 
         .div4 {
@@ -62,6 +67,7 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 12px #0000ff;
+            aspect-ratio: 16 / 9; /* Ratio 16:9 */
         }
 
         .div5 {
@@ -71,10 +77,14 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 0 12px #0000ff;
+            aspect-ratio: 16 / 9; /* Ratio 16:9 */
         }
 
         .div6 {
             grid-row-start: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         iframe,
@@ -105,10 +115,9 @@
         }
 
         .logo-container {
-            margin-top: 20px;
             text-align: center;
             font-family: 'Arial Black', Arial, sans-serif;
-            font-size: 42px;
+            font-size: 34px;
             color: #fffc00;
             text-shadow:
                 0 0 10px #fffc00,
@@ -122,8 +131,6 @@
             padding: 15px 30px;
             border-radius: 15px;
             width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
             user-select: none;
         }
 
@@ -164,6 +171,62 @@
             /** Pone el video detrás de otro contenido **/
             z-index: -1;
         }
+
+        /* Media queries para responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .parent {
+                grid-template-columns: 1fr; /* Una sola columna en móviles */
+                grid-template-rows: auto; /* Altura automática */
+                gap: 10px;
+            }
+
+            .div1,
+            .div2,
+            .div3,
+            .div4,
+            .div5,
+            .div6 {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .logo-container {
+                font-size: 28px; /* Reduce el tamaño de fuente en móviles */
+                letter-spacing: 3px; /* Reduce el espaciado */
+                padding: 10px 20px;
+            }
+
+            .logo-container span {
+                font-size: 14px;
+            }
+
+            .label {
+                font-size: 12px; /* Reduce el tamaño de la etiqueta */
+                padding: 4px 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container {
+                font-size: 24px;
+                letter-spacing: 2px;
+                padding: 8px 15px;
+            }
+
+            .logo-container span {
+                font-size: 12px;
+            }
+
+            .label {
+                font-size: 10px;
+                padding: 3px 6px;
+            }
+        }
     </style>
 </head>
 
@@ -171,7 +234,6 @@
 
     <video id="video-fondo" autoplay muted loop playsinline>
         <source src="vid/NYEFondo" type="video/webm">
-
         Tu navegador no soporta la etiqueta de video.
     </video>
 
@@ -212,8 +274,8 @@
             <div class="label">SOUTH CAM</div>
         </div>
         <div class="div6">
-            <div class="logo-container neon-purple div6">
-                Times Square New Year´s Eve <br>2026
+            <div class="logo-container neon-purple">
+                Times Square New Year´s Eve 2026
                 <span>PRESENTED BY EARTHCAM</span>
             </div>
         </div>
