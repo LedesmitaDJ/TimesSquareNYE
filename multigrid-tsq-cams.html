@@ -8,7 +8,7 @@
     <style>
         body {
             margin: 0;
-            background: url('img/NYE-Fondo2png') no-repeat center center fixed;
+            background: url('img/times_sqaure\ \(1\).webp') no-repeat center center fixed;
             background-size: cover;
             font-family: Arial, sans-serif;
             color: #eee;
@@ -143,10 +143,10 @@
 
         .logo-container span {
             display: block;
-            font-size: 16px;
+            font-size: 24px;
             color: #ccc;
             text-shadow: none;
-            margin-top: 6px;
+            margin-top: 0px;
             letter-spacing: normal;
         }
 
@@ -239,6 +239,47 @@
                 padding: 3px 6px;
             }
         }
+
+        .live-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 1px 5px;
+            border-radius: 5px;
+            background-color: #ff3737;
+            /* Color rojo para dar énfasis a "En vivo" */
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .live-icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            margin-right: 5px;
+            animation: pulse 1.25s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.3);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .live-text {
+            font-size: 16px;
+        }
     </style>
 </head>
 
@@ -255,43 +296,46 @@
                 style="position: static; top: 0px; margin: 0px; border-style: none; left: 0px; visibility: visible;"
                 tabindex="0" vspace="0" width="100%" id="I24_1538162368208" name="I24_1538162368208"
                 src="https://www.youtube.com/embed/rnXIjl_Rzy4?autoplay=1&vq=large" data-gapiattached="true"></iframe>
-            <div class="label">NEW YEAR CELEBRATIONS</div>
+            <div class="label">EarthCam Live: Times Square in 4K</div>
         </div>
         <div class="div2"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
                 scrolling="no"
                 style="position: static; top: 0px; margin: 0px; border-style: none; left: 0px; visibility: visible;"
                 tabindex="0" vspace="0" width="100%" id="I24_1538162368208" name="I24_1538162368208"
-                src="Ball-Cam-2.html" data-gapiattached="true"></iframe>
-            <div class="label">NEW YEAR'S BALL</div>
+                src="Ball-Cam-1.html" data-gapiattached="true"></iframe>
+            <div class="label">Ball Cam 1</div>
         </div>
         <div class="div3"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
                 scrolling="no"
                 style="position: static; top: 0px; margin: 0px; border-style: none; left: 0px; visibility: visible;"
                 tabindex="0" vspace="0" width="100%" id="I24_1538162368208" name="I24_1538162368208"
-                src="https://www.youtube.com/embed/4qyZLflp-sI?autoplay=1&vq=medium" data-gapiattached="true"></iframe>
-            <div class="label">CROSSROADS</div>
+                src="Ball-Cam-2.html" data-gapiattached="true"></iframe>
+            <div class="label">Ball Cam 2</div>
         </div>
         <div class="div4"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
                 scrolling="no"
                 style="position: static; top: 0px; margin: 0px; border-style: none; left: 0px; visibility: visible;"
                 tabindex="0" vspace="0" width="100%" id="I24_1538162368208" name="I24_1538162368208"
                 src="https://www.youtube.com/embed/iiBTWU2FyFo?autoplay=1&vq=medium" data-gapiattached="true"></iframe>
-            <div class="label">STREET CAM</div>
+            <div class="label">Duffy Square 4K</div>
         </div>
         <div class="div5"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0"
                 scrolling="no"
                 style="position: static; top: 0px; margin: 0px; border-style: none; left: 0px; visibility: visible;"
                 tabindex="0" vspace="0" width="100%" id="I24_1538162368208" name="I24_1538162368208"
-                src="Ball-Cam-1.html" data-gapiattached="true"></iframe>
-            <div class="label">SOUTH CAM</div>
+                src="https://www.youtube.com/embed/4qyZLflp-sI?autoplay=1&vq=medium" data-gapiattached="true"></iframe>
+            <div class="label">1560 Broadway</div>
         </div>
         <div class="div6">
             <div class="logo-container neon-purple">
-                Times Square New Year´s Eve 2026
-                <span>PRESENTED BY EARTHCAM</span>
+                <img src="img/logo2-ledesmita-tv.png" width="100%" alt="Ledesmita TV" />
+                <span>
+                    <div class="live-button">
+                        <span class="live-icon"></span>
+                        <span class="live-text">En vivo</span>
+                    </div>
+                </span>
             </div>
-
-
         </div>
     </div>
 

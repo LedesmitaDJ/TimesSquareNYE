@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2025 New Year Celebrations</title>
+  <style>
+    body {
+      margin: 0;
+      background: #121212 url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    .camera-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 12px;
+      width: 90vw;
+      max-width: 1200px;
+    }
+
+    .main-cam {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      position: relative;
+      border: 4px solid #6f00ff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 16px #6f00ffcc;
+    }
+
+    .side-cam {
+      position: relative;
+      border: 4px solid #6f00ff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 12px #6f00ffcc;
+    }
+
+    /* Grid positioning for side cams */
+    .side-cam:nth-child(3) {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+
+    .side-cam:nth-child(4) {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+    }
+
+    .side-cam:nth-child(5) {
+      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+      height: 180px;
+    }
+
+    .side-cam:nth-child(6) {
+      grid-row: 3 / 4;
+      grid-column: 2 / 3;
+      height: 180px;
+    }
+
+    iframe, img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .label {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(111,0,255, 0.9);
+      padding: 5px 10px;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 5px;
+      color: white;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'Arial Black', Arial, sans-serif;
+      box-shadow: 0 0 8px #6f00ffbb;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .logo-container {
+      margin-top: 20px;
+      text-align: center;
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: 42px;
+      color: #fffc00;
+      text-shadow:
+        0 0 10px #fffc00,
+        0 0 20px #fffc00,
+        0 0 30px #bbff00,
+        0 0 40px #bbff00,
+        0 0 50px #aaff00,
+        0 0 60px #aaff00;
+      letter-spacing: 6px;
+      background-color: rgba(30, 0, 60, 0.75);
+      padding: 15px 30px;
+      border-radius: 15px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      user-select: none;
+    }
+
+    .logo-container span {
+      display: block;
+      font-size: 16px;
+      color: #ccc;
+      text-shadow: none;
+      margin-top: 6px;
+      letter-spacing: normal;
+    }
+
+    .neon-purple {
+      color: #d9a3ff;
+      text-shadow:
+        0 0 7px #d9a3ff,
+        0 0 15px #9d5bff,
+        0 0 25px #9d5bff,
+        0 0 35px #6f00ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="camera-container">
+    <!-- Main camera -->
+    <div class="main-cam">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2025_Times_Square_NYE_Preparations_-_Jim_Salameh_-_Jan_2024.jpg/800px-2025_Times_Square_NYE_Preparations_-_Jim_Salameh_-_Jan_2024.jpg" alt="New Year Celebrations" />
+      <div class="label">NEW YEAR CELEBRATIONS</div>
+    </div>
+
+    <!-- South Cam -->
+    <div class="side-cam">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Times_Square_Panorama_2019_1_-_South_View.jpg" alt="South Cam" />
+      <div class="label">SOUTH CAM</div>
+    </div>
+
+    <!-- New Year's Ball -->
+    <div class="side-cam">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Times_Square_Ball_%28New_York_City%29_%2818854993774%29.jpg" alt="New Year's Ball" />
+      <div class="label">NEW YEAR'S BALL</div>
+    </div>
+
+    <!-- Crossroads -->
+    <div class="side-cam">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Times_Square%2C_New_York_City_%2848719495232%29.jpg" alt="Crossroads" />
+      <div class="label">CROSSROADS</div>
+    </div>
+
+    <!-- Street Cam -->
+    <div class="side-cam">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Times_Square_-_New_York_City_-_USA_-_2017.jpg" alt="Street Cam" />
+      <div class="label">STREET CAM</div>
+    </div>
+  </div>
+
+  <div class="logo-container neon-purple">
+    2025 NEW YEAR CELEBRATIONS
+    <span>PRESENTED BY EARTHCAM</span>
+  </div>
+</body>
+</html>
